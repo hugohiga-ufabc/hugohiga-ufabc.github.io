@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>telefonar</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		
+	</head>
+
+	<body class="sapUiBody" id="content">
+	     
+	     <script src="webchat.js"
+                channelId="6fe4c72c-200b-4158-8856-f4929cfdbc6b"
+                token="2c1b9ad4c3d77797f10aafba7608a60b"
+                id="recast-webchat"></script>
+	    <div class="container">
+         <div class="row" style="height:10px">
+            <div id="" class="col-xs-12">&nbsp;</div>
+         </div>
+         <!-- LINHA SEPARADORA-->
+         <div class="row">
+            <div class="col-md-12">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h1>Web Speech API – Reconhecimento de voz com JavaScript</h1>
+                  </div>
+                  <div class="panel-body">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <form action="https://api.recast.ai/connect/v1/webhook/6fe4c72c-200b-4158-8856-f4929cfdbc6b" method="post" target="_blank">
+                              
+                                 <label for="input_hugo">RECEBER AUDIO</label>
+
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="input_hugo">
+                              </div>
+
+                              <input type="submit" value="Submit">
+                           </form>
+                           <button class="btn btn-success btn-lg" id="btn_gravar_audio">Gravar Audio</button>
+                        </div>
+                        <div class="row" style="height:10px">
+                           <div id="" class="col-xs-12">
+                              <hr/>
+                           </div>
+                        </div>
+                        <!-- LINHA SEPARADORA-->
+                        <div class="col-md-12">
+                        
+                        </div>
+                     </div>
+                     <!-- /.row final linha -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /.row final linha -->
+      </div>
+
+      <script src="speechapi.js"></script>
+      <script>
+          $(document).ready(function() {
+            $("#input_hugo").addClass("hugao");
+          });
+      </script>
+
+	</body>
+
+</html>
